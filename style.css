@@ -1,0 +1,220 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes y estilo base */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('assets/fondo.png') no-repeat center center fixed; /* Fondo acuático con la imagen proporcionada */
+    background-size: cover; /* Se asegura de que la imagen cubra toda la pantalla */
+    color: #fff;
+    overflow-x: hidden;
+    animation: backgroundAnimation 60s linear infinite;
+}
+
+/* Animación para el fondo acuático */
+@keyframes backgroundAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Cabecera y barra de navegación */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con más opacidad */
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.navbar h1 {
+    color: #00b4d8;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 8px #00b4d8, 0 0 15px #00b4d8;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+/* Sección de Información */
+.section-info {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 80px 0;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
+.section-info h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: #00b4d8;
+    text-shadow: 0 0 10px #00b4d8, 0 0 20px #00b4d8;
+}
+
+.section-info p {
+    font-size: 1.4rem;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/* Sección de Características */
+.section-features {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.section-features h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #00b4d8;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    width: 30%;
+    margin: 15px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.feature:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+}
+
+.feature h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00b4d8;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* Sección de Redes Sociales */
+.section-socials {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-socials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #00b4d8;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(1.2);
+}
+
+.social-icon:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
+
+/* Sección de Soporte */
+.section-contact {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-contact h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00b4d8;
+}
+
+.section-contact p {
+    font-size: 1.4rem;
+    color: #ddd;
+}
+
+.section-contact a {
+    color: #00b4d8;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.section-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #ddd;
+}
